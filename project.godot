@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Aethelgard: Conclave of War"
+config/description="3D/2.5D tactical autobattler set in the Aethelgard universe."
+run/main_scene="res://scenes/MainConclave.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+
+[autoload]
+
+GlobalSignalBus="*res://scripts/autoload/global_signal_bus.gd"
+GameDatabase="*res://scripts/autoload/game_database.gd"
+
+[debug]
+
+gdscript/warnings/untyped_declaration=1
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+textures/vram_compression/import_s3tc_bptc=true
